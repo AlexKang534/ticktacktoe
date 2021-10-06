@@ -10,6 +10,15 @@
   </head>
   <body>
     <h2>Tic Tac Toe!</h2>
+    <div class="nameTags">
+      <span id="playerOne">test</span>
+      <input id="data" placeholder="Player One" />
+      <button onclick="change()">Click</button>
+
+      <span id="playerTwo">test</span>
+      <input id="dataTwo" placeholder="Player Two" />
+      <button onclick="change()">Click</button>
+    </div>
     <div class="board" id="board">
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
@@ -23,7 +32,12 @@
     </div>
     <div class="winning-message" id="winningMessage">
       <div data-winning-message-text></div>
-      <button id="restartButton">Restart</button>
+      <button
+        id="restartButton"
+        onclick="document.getElementsByClassName('nameTags').value = ''"
+      >
+        Restart
+      </button>
     </div>
   </body>
 </html>

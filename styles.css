@@ -18,6 +18,12 @@ h2 {
   justify-content: center;
 }
 
+.nameTags {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
 .board {
   width: 100vw;
   height: 100vh;

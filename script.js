@@ -1,3 +1,8 @@
+const newInput = document.getElementById("nameInput");
+const playerOne = document.getElementById("playerOne");
+const playerTwo = document.getElementById("playerTwo");
+let dataText = document.getElementById("data").value;
+
 const X_CLASS = "x";
 const CIRCLE_CLASS = "circle";
 const WINNING_COMBINATIONS = [
@@ -21,6 +26,14 @@ let circleTurn;
 startGame();
 
 restartButton.addEventListener("click", startGame);
+newInput.addEventListener("input", change);
+
+function change() {
+  let dataText = document.getElementById("data").value;
+  playerOne.innerHTML = dataText;
+  let dataTextTwo = document.getElementById("dataTwo").value;
+  playerTwo.innerHTML = dataTextTwo;
+}
 
 function startGame() {
   circleTurn = false;
